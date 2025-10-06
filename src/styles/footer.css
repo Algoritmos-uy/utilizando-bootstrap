@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #391e01, #5a3601, #7c4a00);
+    color: #fff;
+    width: 100%;
+}
+
+footer ul li {
+    margin: 1rem 0 1rem 0;
+}
+
+footer .dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+}
+
+footer .dev p {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0.5rem;
+}
+
+.dev a {
+    color: #fff;
+    text-decoration: none;
+}

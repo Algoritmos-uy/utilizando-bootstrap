@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./src/stsyles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <link rel="stylesheet" href="./src/styles/sections.css" />
+    <link rel="stylesheet" href="./src/styles/wap.css" />
+    <link rel="stylesheet" href="./src/styles/contacto.css" />
+    <link rel="stylesheet" href="./src/styles/footer.css" />
+    <link rel="stylesheet" href="./src/styles/dark-ligth.css" />
+    <title>CAFETERÍA</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <img src="#" height="70px" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="section" href="#About"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="section" href="#Cafe"
+                  >Café</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#Capuchinos"
+                  >Capuchinos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Chocolate"
+                  >Chocolate</a
+                >
+              </li>
+              <li class="nav-item"></li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                id="searchInput"
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button
+                onclick="buscar()"
+                class="btn btn-outline-danger"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div id="portada">
+        <img src="#" height="120px" alt="" />
+        <h1>Cafetería</h1>
+        <img src="#" height="120px" alt="" />
+      </div>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1675237625862-d982e7f44696?q=80&w=2070&
+                    auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              height="450'px"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Granos seleccionados</h1>
+              <p>
+                Los Mejores granos seleccionados de 
+                 café de todo el mundo.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070
+                    &auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%
+                    3D%3D"
+              height="450'px"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Con el mejor servicio</h1>
+              <p>
+                Disfruta el aroma y el sabor de nuestros cafés.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Nuestro moderno local</h1>
+              <p>
+                Te esperamos para que disfrutes de un café de calidad.
+              </p>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=
+                    format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              height="450'px"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="titulos">
+        <h1>- Sobre Nosotros -</h1>
+      </div>
+      <section id="About">
+        <!--   
+            <p>Aqui voy a escribir todo lo que corresponda sobre mi, <br>
+                sobre todo lo que hago y lo voy a exponer en esta página </p>-->
+      </section>
+
+      <!-- CARDS CAFÉ -->
+
+      <div class="titulos">
+        <h1>Café</h1>
+      </div>
+      <section id="Cafe">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1974&auto=format&fit
+              =crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="..."
+                height="450"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Expresso exclusivo</h5>
+                <p class="card-text">
+                  Selección de granos molidos y elaborados exclusivamente para
+                  ti
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1494314671902-399b18174975?q=80&w=1974&auto=format&fit=
+                        crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="..."
+                height="450"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Café herbal</h5>
+                <p class="card-text">
+                  El mas fino café, con toques de hierbas aromáticas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=1949&auto=format&fit=crop&ixlib=
+                        rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="..."
+                height="450"
+              />
+              <div class="card-body">
+                <h5 class="card-title">El mas puro café</h5>
+                <p class="card-text">
+                  Granos seleccionados de origen certificado
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="titulos">
+        <h1>Capuchinos</h1>
+      </div>
+      <section id="Capuchinos">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1518012753778-7e1249d63f13?q=80&w=1974&auto=
+                       format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="450"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Capuchino Pequeño</h5>
+                <p class="card-text">
+                  Café colombia intenso con gránulos de chocolate y canela
+                </p>
+                <p>Valor $ 180</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1518012753778-7e1249d63f13?q=80&w=1974&auto=
+                       format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                       "
+                class="card-img-top"
+                height="450"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">--------------------------------------</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1518012753778-7e1249d63f13?q=80&w=1974&auto=
+                       format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="450"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">--------------------------------------</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="titulos">
+        <h1>Chocolate</h1>
+      </div>
+      <section id="Chocolate">
+        <!-- CARDS CHOCOLATE -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="#" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">xxx</h5>
+                <p class="card-text">
+                  ----------------------------------------------------------
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="#" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">xxx</h5>
+                <p class="card-text">
+                  ----------------------------------------------------------
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="#" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">xxx</h5>
+                <p class="card-text">
+                  ----------------------------------------------------------
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="titulos">
+        <h1>Contacto</h1>
+      </div>
+
+      <section id="Contacto">
+        <div class="medios">
+          <p class="location">Montevideo</p>
+          <p class="wap">
+            <a
+              href="https://api.whatsapp.com/send?phone=598555555555"
+              target="_blank"
+              rel="noopener"
+              >Whatsapp</a
+            >
+          </p>
+          <p class="email">
+            <a href="mailto:mail@mail" title="Enviar correo"> Email</a>
+          </p>
+          <p class="phone">
+            <a href="tel: 59855555555" title="Hacer Llamada">Llamar</a>
+          </p>
+        </div>
+
+        <div class="social">
+          <h3>Redes</h3>
+          <img src="./src/icons/instagram.png" height="40" alt="" />
+          <img src="./src/icons/facebook.png" height="40" alt="" />
+          <img src="./src/icons/youtube1.png" height="40" alt="" />
+        </div>
+        <div class="d-grid col-4 mx-auto">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#localModal"
+          >
+            Como Llegar
+          </button>
+        </div>
+      </section>
+
+      <section id="local" class="conteiner text-center">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="localModal"
+          tabindex="-1"
+          aria-labelledby="localModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="localModalLabel">Localización</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1636.7036124212225!2d-56.
+                       18356928311155!3d-34.87111914460978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f800cdca083cf%3A0xcea9160be7015215!2sAv.
+                       %20Gral.%20San%20Mart%C3%ADn%20y%20Bv.%20Gral.%20Artigas!5e0!3m2!1spt-BR!2suy!4v1742235628731!5m2!1spt-BR!2suy"
+                  width="400"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div>
+      <a
+        href="https://api.whatsapp.com/send?phone=59898000000"
+        target="_blank"
+        rel="noopener"
+        title="Contacto por WhatsApp"
+      >
+        <img
+          class="whatsapp"
+          src="./assets/img/whatsapp.png"
+          title="Contact us on WhatsApp"
+        />
+      </a>
+    </div>
+
+    <footer>
+      <ul>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+      </ul>
+      <ul>
+        <li>Enlaces de Interes</li>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+      </ul>
+      <div class="dev">
+        <p>Entre lanas e hilos 2024</p>
+        <p>Proyecto, diseño y desarrollo</p>
+        <p>
+          <a href="https://algoritmos.uy" target="_blank" rel="noopener"
+            >www.algoritmos.uy</a
+          >
+        </p>
+        <p>+598-91000000</p>
+      </div>
+    </footer>
+
+  
+
+    <script src="./src/js/dark-ligth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+      
+    </script>
+    
+  </body>
+</html>
