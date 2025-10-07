@@ -1,0 +1,79 @@
+# .gitignore  para proyecto web / Node
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+
+# paquetes y salidas de construcción
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+public/
+/.serverless/
+
+# directorios de dependencias
+jspm_packages/
+
+# Archivos de ambiente (contienen secretos)
+.env
+.env.*
+
+# Directorios de IDEs y archivos específicos de entorno
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+*.swp
+
+# archivos del sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# directorios de  cobertura de tests
+coverage/
+coverage-final.json
+lcov-report/
+
+# salidas de pruebas
+.nyc_output/
+
+# artefactos de empaquetado
+*.tgz
+*.zip
+
+# archivos temporales
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# Certificados y claves
+*.pem
+*.key
+*.crt
+
+# IDE/project files
+*.iml
+
+
+
+# Nota: si ya comitaste archivos que ahora quieres ignorar, ejecuta:
+#   git rm -r --cached <ruta>
+# y luego commitea este .gitignore
